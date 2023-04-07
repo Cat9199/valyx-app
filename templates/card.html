@@ -1,0 +1,71 @@
+
+{% extends 'base.html' %} {% block content %}
+
+<style>
+
+    .product-card {
+        width: 400px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        margin:3% 2%;
+    }
+    
+    .product-image {
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .product-info {
+        width: 60%;
+        padding: 8px;
+    }
+    
+    .product-name {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+    
+    .product-category {
+        font-size: 14px;
+        color: #777;
+        margin: 0;
+    }
+    
+    .product-price {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 4px 0;
+    }
+    
+.product-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 16px;
+}
+
+</style>
+<div class="product-cards">
+{% for c in info%}
+<div class="product-card">
+    <img src="{{ url_for('img', img_id=c.pid) }}" alt="Product Image" class="product-image">
+    <div class="product-info">
+        <h2 class="product-name">Product Name</h2>
+        <p class="product-category">Category: Electronics</p>
+        <p class="product-price">$99.99</p>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+
+
+{% endblock %}

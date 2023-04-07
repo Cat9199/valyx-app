@@ -1,0 +1,262 @@
+{% extends 'base.html' %} {% block content %}
+
+<body class="bg-body-tertiary" data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+      </symbol>
+    </svg>
+
+
+
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='assets/valyx_logo.jpg') }}" alt="" width="72" height="57">
+                           </div>
+
+            <div class="row g-3">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-body-secondary">عربة التسوق</span>
+                        <span class="badge bg-secondary rounded-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">اسم المنتج</h6>
+                                <small class="text-body-secondary">وصف مختصر</small>
+                            </div>
+                            <span class="text-body-secondary">$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">المنتج الثاني</h6>
+                                <small class="text-body-secondary">وصف مختصر</small>
+                            </div>
+                            <span class="text-body-secondary">$8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">البند الثالث</h6>
+                                <small class="text-body-secondary">وصف مختصر</small>
+                            </div>
+                            <span class="text-body-secondary">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                            <div class="text-success">
+                                <h6 class="my-0">رمز ترويجي</h6>
+                                <small>EXAMPLECODE</small>
+                            </div>
+                            <span class="text-success">-$5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>مجموع (USD)</span>
+                            <strong>$20</strong>
+                        </li>
+                    </ul>
+
+                   
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">عنوان الفوترة</h4>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">الاسم الأول</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                    يرجى إدخال اسم أول صحيح.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">اسم العائلة</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback">
+                                    يرجى إدخال اسم عائلة صحيح.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="username" class="form-label">رقم الهاتف</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">+2</span>
+                                    <input type="text" class="form-control" id="username" placeholder="رقم الهاتف " required="">
+                                    <div class="invalid-feedback">
+                                        اسم المستخدم الخاص بك مطلوب.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">البريد الإلكتروني <span class="text-body-secondary">(اختياري)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    يرجى إدخال عنوان بريد إلكتروني صحيح لتصلكم تحديثات الشحن.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">العنوان</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 الشارع الأول" required="">
+                                <div class="invalid-feedback">
+                                    يرجى إدخال عنوان الشحن الخاص بك.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address2" class="form-label">عنوان 2 <span class="text-body-secondary">(اختياري)</span></label>
+                                <input type="text" class="form-control" id="address2" placeholder="شقة 24">
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="country" class="form-label">البلد</label>
+                                <select class="form-select" id="country" required="">
+                <option value="">اختر...</option>
+                <option>مصر</option>
+              </select>
+                                <div class="invalid-feedback">
+                                    يرجى اختيار بلد صحيح.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">المنطقة</label>
+                                <select class="form-select" id="state" required="">
+                <option selected>اختر...</option>
+                <option value="الإسكندرية">الإسكندرية</option>
+                <option value="أسوان">أسوان</option>
+                <option value="أسيوط">أسيوط</option>
+                <option value="البحيرة">البحيرة</option>
+                <option value="بني سويف">بني سويف</option>
+                <option value="القاهرة">القاهرة</option>
+                <option value="الدقهلية">الدقهلية</option>
+                <option value="دمياط">دمياط</option>
+                <option value="الفيوم">الفيوم</option>
+                <option value="الغربية">الغربية</option>
+                <option value="الجيزة">الجيزة</option>
+                <option value="الإسماعيلية">الإسماعيلية</option>
+                <option value="كفر الشيخ">كفر الشيخ</option>
+                <option value="الأقصر">الأقصر</option>
+                <option value="مطروح">مطروح</option>
+                <option value="المنيا">المنيا</option>
+                <option value="المنوفية">المنوفية</option>
+                <option value="الوادي الجديد">الوادي الجديد</option>
+                <option value="شمال سيناء">شمال سيناء</option>
+                <option value="بورسعيد">بورسعيد</option>
+                <option value="القليوبية">القليوبية</option>
+                <option value="قنا">قنا</option>
+                <option value="البحر الأحمر">البحر الأحمر</option>
+                <option value="الشرقية">الشرقية</option>
+                <option value="سوهاج">سوهاج</option>
+                <option value="جنوب سيناء">جنوب سيناء</option>
+                <option value="السويس">السويس</option>
+            </select>
+                                </select>
+                                <div class="invalid-feedback">
+                                    يرجى اختيار اسم منطقة صحيح.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label">الرمز البريدي</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    الرمز البريدي مطلوب.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">عنوان الشحن هو نفس عنوان الفوترة الخاص بي</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">احفظ هذه المعلومات في المرة القادمة</label>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h4 class="mb-3">طريقة الدفع</h4>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                                <label class="form-check-label" for="credit">عند الاستلام</label>
+                            </div>
+                            
+
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">الاسم على البطاقة</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                <small class="text-body-secondary">الاسم الكامل كما هو معروض على البطاقة</small>
+                                <div class="invalid-feedback">
+                                    الاسم على البطاقة مطلوب
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">رقم البطاقة</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    رقم بطاقة الائتمان مطلوب
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">تاريخ انتهاء الصلاحية</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    تاريخ انتهاء الصلاحية مطلوب
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">الرمز الثلاثي (CVV)</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    رمز الحماية مطلوب
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">الاستمرار بالدفع</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+            <p class="mb-1">© 2023-2023  Valyx</p>
+
+        </footer>
+    </div>
+
+
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+    <script src="../checkout/checkout.js"></script>
+
+
+
+
+</body>
+{% endblock %}

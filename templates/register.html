@@ -1,0 +1,97 @@
+{% extends 'base.html' %} {% block content %}
+  <body class="">
+	<style>
+		.button {
+			width: 300px;
+			background-color: #4c5baf;
+			/* Background color */
+			border: none;
+			color: white;
+			/* Text color */
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 8px;
+			/* Border radius */
+		}</style>
+    <main class="main">
+
+      <div class="content">
+
+			<div class="container-fluid pb-5">
+
+				<div class="row justify-content-md-center">
+					<div class="card-wrapper col-12 col-md-4 mt-5">
+						<div class="brand text-center mb-3">
+							<a href="/"><img src="{{ url_for('static', filename='assets/valyx_logo.jpg') }}"></a>
+						</div>
+						<div class="card">
+							
+							<div class="card-body">
+								<center>
+								<h4 class="card-title">Create new account</h4>
+								<br>
+								{% if error == 'The password does not match'%}
+								<center>
+									
+								<div class="alert alert-danger" role="alert">
+									{{ error }}
+								  </div></center>
+								{% endif %}
+							</center>
+								<form method='POST' action='/sun-m'>
+			
+									<div class="form-group">
+										<label for="name">Name</label>
+										<input type="text" class="form-control" id="name" name="name" required="" autofocus="">
+									</div>
+
+									<div class="form-group">
+										<label for="email">E-Mail Address</label>
+										<input id="email" type="email" class="form-control" name="email" required="">
+									</div>
+
+									<div class="form-row">
+										<div class="form-group ">
+											<label for="password">Password
+											</label>
+											<input id="password" type="password" class="form-control" name="password" required="">
+										</div>
+										<div class="form-group ">
+											<label for="password-confirm">Confirm Password
+											</label>
+											<input id="password-confirm" type="password2" class="form-control" name="password_confirmation" required="">
+										</div>
+									</div>
+<br><br>
+
+<center>
+	<div class="form-group no-margin">
+		<button class="button" tybe='submit'>Sign Up</button>
+		
+	</div></center>
+									</div>
+									<div class="text-center mt-3 small">
+										Already have an account? <a href="/login">Sign In</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+
+
+			</div>
+
+      </div>
+    </main>
+
+    
+  </body>
+  {% endblock %}
